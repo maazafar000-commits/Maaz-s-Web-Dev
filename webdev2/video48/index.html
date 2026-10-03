@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8</title>
+    <style>
+        @keyframes animations {
+            0%{transform: translate(0px,0px);}
+            25%{transform: translate(200px,0px);}
+            50%{transform: translate(400px,-250px);}
+        }
+        .container {
+            display: flex;
+            background-color: blue;
+            width: 80vw;
+            height: 70vh;
+            justify-content: end;
+            flex-direction: column;
+        }
+
+        .red {
+            
+            animation: animations 4s infinite linear;
+            background-color: red;
+            width: 121px;
+            height: 121px;
+            border-radius: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="red"></div>
+    </div>
+</body>
+
+</html>

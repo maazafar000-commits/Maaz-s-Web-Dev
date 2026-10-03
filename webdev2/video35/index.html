@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        .box :first-child {
+            background-color: red;
+        }
+
+        .box ::first-line {
+            color: yellow;
+        }
+
+        .boxes * {
+            color: blue;
+            border: 2px solid black;
+        }
+
+        p,
+        a,
+        .box,
+        [data-color="primary"] {
+            margin-top: 45px;
+
+        }
+
+        .box :nth-child(odd) {
+            background-color: blue;
+        }
+        .box :nth-last-child(1){
+            background-color: red;
+        }
+        .boxes ::before{
+            content: "How are you?";
+        }
+        .boxes ::after{
+
+        }
+        .boxes ::selection{
+            color: aqua;
+            background-color: black;
+        }
+        .box ::first-letter{
+            color: purple;
+        }
+        input ::placeholder{
+            color: green;
+            font-size: 56px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos in natus
+            eveniet maxime iste nulla impedit neque, consequuntur ipsum doloremque suscipit ab laboriosam autem nesciunt
+            dolorem fugit praesentium nostrum tempora expedita adipisci, ad optio eius voluptates saepe? Repellat sunt
+            explicabo totam! Tenetur odit praesentium provident laborum. Vitae harum commodi distinctio ipsa quos ex hic
+            est, porro nulla atque consequuntur eveniet. Odit non aliquid qui sint, consequatur, porro molestias eaque
+            iusto earum alias pariatur blanditiis, magnam veniam velit facilis nostrum distinctio odio placeat! Sequi
+            placeat ab, dolorum nostrum sunt aperiam aliquid repellendus exercitationem hic, vero, consectetur nobis est
+            aspernatur a praesentium id dolorem minus voluptatum qui ullam error. Voluptatem natus, eaque voluptas, iure
+            atque doloribus possimus deserunt consequuntur obcaecati quo maiores id accusantium ipsum distinctio.
+            Commodi eum quaerat aliquam accusamus voluptas atque necessitatibus dolorem obcaecati voluptatem? At atque
+            sapiente eaque quae harum non dolor quod. Delectus qui, quas in officia praesentium tenetur modi eius sequi
+            nostrum similique sint itaque rerum odit facilis nisi deserunt quasi earum autem quam dignissimos, officiis
+            fuga iste voluptatum. Omnis atque, inventore nobis officiis, sed quae dolorem nihil ipsum aliquid et nulla
+            repudiandae laboriosam nam blanditiis reiciendis adipisci aspernatur! Temporibus cum, necessitatibus et at
+            recusandae impedit eligendi tenetur delectus iure reprehenderit ad dolores. Nobis, voluptates ipsam! Dicta
+            itaque maxime vel sed quis mollitia nihil nobis necessitatibus ipsa eius tempora odio rem accusamus et
+            voluptatem amet, minus illum quam nesciunt provident quos ducimus dolorem optio. Ad soluta laboriosam
+            assumenda quis maiores officia odit, tempora quasi saepe excepturi dolorem rerum voluptates provident omnis
+            iure facilis, alias, quo possimus. Molestias perferendis rem excepturi doloribus consequuntur, expedita quam
+            vel in sunt alias quia, amet nostrum. Ducimus eos ex, vel iste qui autem quis vitae veniam hic. Magnam,
+            quisquam aliquam similique vero tempore nemo ab tenetur a laudantium expedita odio. Distinctio facere
+            dolorum debitis sit molestias laboriosam, culpa praesentium doloremque voluptatibus veniam, unde ducimus cum
+            natus fugiat hic sed ea minima inventore enim. Earum accusamus quia repellendus hic explicabo impedit
+            doloribus rem saepe! Velit tempore harum deleniti quisquam, voluptas deserunt ad voluptatum odit magnam
+            exercitationem incidunt excepturi cum ullam aperiam odio asperiores sed molestias cumque voluptatibus
+            aliquam praesentium repellat officiis! Consectetur earum ea amet magnam saepe similique deserunt officia
+            distinctio labore debitis sequi voluptatum modi eligendi, dolorum beatae, reprehenderit quia nulla at
+            repellendus tempora eveniet nisi! Sapiente, corrupti laborum dicta enim debitis temporibus ipsum facere nemo
+            maxime dolorem rem eum similique necessitatibus, id architecto? Placeat iure perferendis consequuntur
+            possimus excepturi nemo qui odit quidem aut dolorum quo blanditiis debitis quia, accusamus non doloremque
+            aliquam modi veniam. Hic animi natus, qui unde molestias vero vitae eaque provident exercitationem
+            asperiores maxime et ipsa nulla a necessitatibus quos iusto nostrum facere ipsum nisi tempore rerum aut
+            placeat odio. Sunt, eum.</div>
+        <div class="box">A Box</div>
+        <div class="box">A Box</div>
+        <input type="text" placeholder="Type Your Name Here">
+    </div>
+</body>
+
+</html>
